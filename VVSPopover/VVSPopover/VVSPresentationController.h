@@ -1,0 +1,13 @@
+//
+//  VVSPresentationController.h
+//  VVSPopover
+//
+//  Created by sw on 16/10/21.
+//  Copyright © 2016年 sw. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface VVSPresentationController : UIPresentationController
+@property(nonatomic,assign) CGRect presentedViewFrame;
+@end
