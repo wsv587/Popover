@@ -44,6 +44,7 @@
     if (!_manager) {
         _manager = [[VVSPopoverAnimationManager alloc] init];
         _manager.presentedViewFrame = CGRectMake(100.f, 56.f, 200.f, 200.f);
+        _manager.coverViewResponse = YES;
     }
     return _manager;
 }

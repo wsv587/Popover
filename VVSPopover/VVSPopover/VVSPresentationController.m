@@ -14,6 +14,15 @@
 
 @implementation VVSPresentationController
 
+- (instancetype)initWithPresentedViewController:(UIViewController *)presentedViewController presentingViewController:(UIViewController *)presentingViewController {
+    self = [super initWithPresentedViewController:presentedViewController presentingViewController:presentingViewController];
+    if (self) {
+        // init 和 dealloc方法中尽量不要使用getter/setter
+        _coverViewResponse = YES;
+    }
+    return self;
+}
+
 - (void)containerViewWillLayoutSubviews {
     [super containerViewWillLayoutSubviews];
     // 1.添加蒙版
@@ -27,7 +36,9 @@
 
 #pragma mark - private
 - (void)dismiss {
-    [self.presentedViewController dismissViewControllerAnimated:YES completion:nil];
+    if ([self isConverViewResponse]) {
+        [self.presentedViewController dismissViewControllerAnimated:YES completion:nil];
+    }
 }
 #pragma mark - lazy 
 - (UIButton *)cover {

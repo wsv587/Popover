@@ -11,6 +11,13 @@
 
 @interface VVSPopoverAnimationManager : NSObject<UIViewControllerTransitioningDelegate,UIViewControllerAnimatedTransitioning>
 
+/**
+ *  被展现的视图的frame
+ */
 @property(nonatomic,assign) CGRect presentedViewFrame;
+/**
+ *  点击蒙版是否响应事件
+ */
+@property(nonatomic,assign,getter=isConverViewResponse) BOOL coverViewResponse;
 
 @end

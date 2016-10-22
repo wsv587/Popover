@@ -23,6 +23,7 @@
 - (UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(UIViewController *)presenting sourceViewController:(UIViewController *)source {
     VVSPresentationController *presentation = [[VVSPresentationController alloc] initWithPresentedViewController:presented presentingViewController:presenting];
     presentation.presentedViewFrame = CGRectMake(100.f, 56.f, 200.f, 200.f);
+    presentation.coverViewResponse = self.isConverViewResponse;
     return presentation;
 }
 
