@@ -44,7 +44,10 @@
     if (!_manager) {
         _manager = [[VVSPopoverAnimationManager alloc] init];
         _manager.presentedViewFrame = CGRectMake(100.f, 56.f, 200.f, 200.f);
-        _manager.coverViewResponse = YES;
+        // _manager.coverViewResponse = NO;
+        // _manager.animatable = NO;
+        //_manager.transitionAnimationStyle = 17;
+        _manager.transitionAnimationStyle = VVSTransitionAnimationStylePresentFromLeft;
     }
     return _manager;
 }

@@ -10,16 +10,17 @@
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSUInteger, VVSTransitionAnimationStyle) {
-    // push
-    VVSTransitionAnimationStylePresentFromTop,
-    VVSTransitionAnimationStylePresentFromLeft,
-    VVSTransitionAnimationStylePresentFromRight,
-    VVSTransitionAnimationStylePresentFromBottom,
+    
     // stretch
     VVSTransitionAnimationStyleStretchFromTop,
     VVSTransitionAnimationStyleStretchFromLeft,
     VVSTransitionAnimationStyleStretchFromRight,
     VVSTransitionAnimationStyleStretchFromBottom,
+    // present
+    VVSTransitionAnimationStylePresentFromTop,
+    VVSTransitionAnimationStylePresentFromLeft,
+    VVSTransitionAnimationStylePresentFromRight,
+    VVSTransitionAnimationStylePresentFromBottom,
     // scale
     VVSTransitionAnimationStyleScaleFromTopCenter,
     VVSTransitionAnimationStyleScaleFromLeftCenter,
@@ -46,5 +47,20 @@ typedef NS_ENUM(NSUInteger, VVSTransitionAnimationStyle) {
  *  点击蒙版是否响应事件
  */
 @property(nonatomic,assign,getter=isConverViewResponse) BOOL coverViewResponse;
+/**
+ *  转场动画时间
+ *  默认0.5秒
+ */
+@property(nonatomic,assign) NSTimeInterval transitionDuration;
+/**
+ *  转场是否动画
+ *  默认有动画
+ */
+@property(nonatomic,assign,getter=isAnimatable) BOOL animatable;
+/**
+ *  转场样式
+ *  默认值 VVSTransitionAnimationStyleStretchFromTop
+ */
+@property(nonatomic,assign) VVSTransitionAnimationStyle transitionAnimationStyle;
 
 @end

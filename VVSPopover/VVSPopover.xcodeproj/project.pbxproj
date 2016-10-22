@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D01B784A1DBBCC38001EC01E /* UIView+VVSFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B78491DBBCC38001EC01E /* UIView+VVSFrame.m */; };
 		D0237C081DBA694E00A3257F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0237C071DBA694E00A3257F /* main.m */; };
 		D0237C0B1DBA694E00A3257F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0237C0A1DBA694E00A3257F /* AppDelegate.m */; };
 		D0237C0E1DBA694E00A3257F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0237C0D1DBA694E00A3257F /* ViewController.m */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D01B78481DBBCC38001EC01E /* UIView+VVSFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VVSFrame.h"; sourceTree = "<group>"; };
+		D01B78491DBBCC38001EC01E /* UIView+VVSFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VVSFrame.m"; sourceTree = "<group>"; };
 		D0237C031DBA694E00A3257F /* VVSPopover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VVSPopover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0237C071DBA694E00A3257F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D0237C091DBA694E00A3257F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -162,6 +165,8 @@
 				D0237C401DBA6D4700A3257F /* VVSPresentationController.m */,
 				D0237C451DBA7C9D00A3257F /* VVSPopoverAnimationManager.h */,
 				D0237C461DBA7C9D00A3257F /* VVSPopoverAnimationManager.m */,
+				D01B78481DBBCC38001EC01E /* UIView+VVSFrame.h */,
+				D01B78491DBBCC38001EC01E /* UIView+VVSFrame.m */,
 			);
 			name = Popover;
 			sourceTree = "<group>";
@@ -301,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0237C411DBA6D4700A3257F /* VVSPresentationController.m in Sources */,
+				D01B784A1DBBCC38001EC01E /* UIView+VVSFrame.m in Sources */,
 				D0237C0E1DBA694E00A3257F /* ViewController.m in Sources */,
 				D0237C0B1DBA694E00A3257F /* AppDelegate.m in Sources */,
 				D0237C3D1DBA6B1800A3257F /* VVSPopoverViewController.m in Sources */,
@@ -529,6 +535,7 @@
 				D0237C321DBA694E00A3257F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0237C331DBA694E00A3257F /* Build configuration list for PBXNativeTarget "VVSPopoverTests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +544,7 @@
 				D0237C351DBA694E00A3257F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0237C361DBA694E00A3257F /* Build configuration list for PBXNativeTarget "VVSPopoverUITests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +553,7 @@
 				D0237C381DBA694E00A3257F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -17,8 +17,8 @@
 - (instancetype)initWithPresentedViewController:(UIViewController *)presentedViewController presentingViewController:(UIViewController *)presentingViewController {
     self = [super initWithPresentedViewController:presentedViewController presentingViewController:presentingViewController];
     if (self) {
-        // init 和 dealloc方法中尽量不要使用getter/setter
-        _coverViewResponse = YES;
+        // 在这赋值会被manager覆盖掉
+        // _coverViewResponse = YES;
     }
     return self;
 }
@@ -36,9 +36,13 @@
 
 #pragma mark - private
 - (void)dismiss {
-    if ([self isConverViewResponse]) {
+    if (self.isConverViewResponse) {
         [self.presentedViewController dismissViewControllerAnimated:YES completion:nil];
     }
+//    else {
+//        [self.presentedViewController dismissViewControllerAnimated:NO completion:nil];
+//    }
+
 }
 #pragma mark - lazy 
 - (UIButton *)cover {
