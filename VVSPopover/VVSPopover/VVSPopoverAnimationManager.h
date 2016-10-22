@@ -9,6 +9,33 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSUInteger, VVSTransitionAnimationStyle) {
+    // push
+    VVSTransitionAnimationStylePresentFromTop,
+    VVSTransitionAnimationStylePresentFromLeft,
+    VVSTransitionAnimationStylePresentFromRight,
+    VVSTransitionAnimationStylePresentFromBottom,
+    // stretch
+    VVSTransitionAnimationStyleStretchFromTop,
+    VVSTransitionAnimationStyleStretchFromLeft,
+    VVSTransitionAnimationStyleStretchFromRight,
+    VVSTransitionAnimationStyleStretchFromBottom,
+    // scale
+    VVSTransitionAnimationStyleScaleFromTopCenter,
+    VVSTransitionAnimationStyleScaleFromLeftCenter,
+    VVSTransitionAnimationStyleScaleFromRightCenter,
+    VVSTransitionAnimationStyleScaleFromBottomCenter,
+    
+    VVSTransitionAnimationStyleScaleFromTopLeft,
+    VVSTransitionAnimationStyleScaleFromTopRight,
+    VVSTransitionAnimationStyleScaleFromBottomLeft,
+    VVSTransitionAnimationStyleScaleFromBottomRight,
+    
+    // fade
+    VVSTransitionAnimationStyleFade,
+
+};
+
 @interface VVSPopoverAnimationManager : NSObject<UIViewControllerTransitioningDelegate,UIViewControllerAnimatedTransitioning>
 
 /**
