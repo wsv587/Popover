@@ -173,6 +173,22 @@
         toView.layer.anchorPoint = CGPointMake(0.5, 1.f);
         toView.transform = CGAffineTransformMakeScale(0.f, 0.f);
         toTransfrom = CGAffineTransformIdentity;
+    } else if (style == VVSTransitionAnimationStyleScaleFromTopLeft) {
+        toView.layer.anchorPoint = CGPointMake(0.f, 0.f);
+        toView.transform = CGAffineTransformMakeScale(0.f, 0.f);
+        toTransfrom = CGAffineTransformIdentity;
+    } else if (style == VVSTransitionAnimationStyleScaleFromTopRight) {
+        toView.layer.anchorPoint = CGPointMake(1.f, 0.f);
+        toView.transform = CGAffineTransformMakeScale(0.f, 0.f);
+        toTransfrom = CGAffineTransformIdentity;
+    } else if (style == VVSTransitionAnimationStyleScaleFromBottomLeft) {
+        toView.layer.anchorPoint = CGPointMake(0.f, 1.f);
+        toView.transform = CGAffineTransformMakeScale(0.f, 0.f);
+        toTransfrom = CGAffineTransformIdentity;
+    } else if (style == VVSTransitionAnimationStyleScaleFromBottomRight) {
+        toView.layer.anchorPoint = CGPointMake(1.f, 1.f);
+        toView.transform = CGAffineTransformMakeScale(0.f, 0.f);
+        toTransfrom = CGAffineTransformIdentity;
     }
     
     
@@ -233,7 +249,16 @@
         fromTransform = CGAffineTransformMakeScale(0.0001, 0.0001);
     } else if (style == VVSTransitionAnimationStyleScaleFromBottomCenter) {
         fromTransform = CGAffineTransformMakeScale(0.0001, 0.0001);
+    } else if (style == VVSTransitionAnimationStyleScaleFromTopLeft) {
+        fromTransform = CGAffineTransformMakeScale(0.0001, 0.0001);
+    } else if (style == VVSTransitionAnimationStyleScaleFromTopRight) {
+        fromTransform = CGAffineTransformMakeScale(0.0001, 0.0001);
+    } else if (style == VVSTransitionAnimationStyleScaleFromBottomLeft) {
+        fromTransform = CGAffineTransformMakeScale(0.0001, 0.0001);
+    } else if (style == VVSTransitionAnimationStyleScaleFromBottomRight) {
+        fromTransform = CGAffineTransformMakeScale(0.0001, 0.0001);
     }
+
 
 
     

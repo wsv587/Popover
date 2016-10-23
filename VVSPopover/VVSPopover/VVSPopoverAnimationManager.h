@@ -27,10 +27,10 @@ typedef NS_ENUM(NSUInteger, VVSTransitionAnimationStyle) {
     VVSTransitionAnimationStyleScaleFromRightCenter, // ✅
     VVSTransitionAnimationStyleScaleFromBottomCenter, // ✅
     
-    VVSTransitionAnimationStyleScaleFromTopLeft,
-    VVSTransitionAnimationStyleScaleFromTopRight,
-    VVSTransitionAnimationStyleScaleFromBottomLeft,
-    VVSTransitionAnimationStyleScaleFromBottomRight,
+    VVSTransitionAnimationStyleScaleFromTopLeft, // ✅
+    VVSTransitionAnimationStyleScaleFromTopRight, // ✅
+    VVSTransitionAnimationStyleScaleFromBottomLeft, // ✅
+    VVSTransitionAnimationStyleScaleFromBottomRight, // ✅
     
     // fade
     VVSTransitionAnimationStyleFade,
