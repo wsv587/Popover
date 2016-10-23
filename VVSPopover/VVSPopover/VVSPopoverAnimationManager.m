@@ -88,6 +88,8 @@
     // 被展现的视图如何展现
     VVSTransitionAnimationStyle style = self.transitionAnimationStyle;
     CGAffineTransform toTransfrom;
+    
+    ////////////////////////////////////////////////////////////////
     // strentch
     if (style == VVSTransitionAnimationStyleStretchFromTop) {
         /**
@@ -132,8 +134,14 @@
         toTransfrom = CGAffineTransformIdentity;
 
     }
+    
+    ////////////////////////////////////////////////////////////////
     // scale
-    if (style == VVSTransitionAnimationStyleScaleFromTopCenter) {
+    if (style == VVSTransitionAnimationStyleScaleFromCenter) {
+        toView.layer.anchorPoint = CGPointMake(0.5, 0.5);
+        toView.transform = CGAffineTransformMakeScale(0.f, 0.f);
+        toTransfrom = CGAffineTransformIdentity;
+    } else if (style == VVSTransitionAnimationStyleScaleFromTopCenter) {
         toView.layer.anchorPoint = CGPointMake(0.5, 0.f);
         toView.transform = CGAffineTransformMakeScale(0.f, 0.f);
         toTransfrom = CGAffineTransformIdentity;
@@ -191,6 +199,16 @@
         toTransfrom = CGAffineTransformIdentity;
     }
     
+    ////////////////////////////////////////////////////////////////
+    // fade
+//    if (style == VVSTransitionAnimationStyleFade) {
+//        toView.alpha = 0.f;
+//        [UIView animateWithDuration:duration animations:^{
+//            toView.alpha = 1.f;
+//        } completion:^(BOOL finished) {
+//            [transitionContext completeTransition:YES];
+//        }];
+//    }
     
     ////////////////////////////////////////////////////////////////
     // present
@@ -209,7 +227,15 @@
         }];
     }
     
+    if (self.alphaAnimatable) {
+        toView.alpha = 0.f;
+    } else {
+        toView.alpha = 1.f;
+    }
     [UIView animateWithDuration:duration animations:^{
+        if (self.alphaAnimatable) {
+            toView.alpha = 1.f;
+        }
         toView.transform = toTransfrom;
     } completion:^(BOOL finished) {
         [transitionContext completeTransition:YES];
@@ -225,6 +251,18 @@
     // 被展现的动画如何消失
     VVSTransitionAnimationStyle style = self.transitionAnimationStyle;
     CGAffineTransform fromTransform;
+    
+    //////////////////////////////////////////////////////////////
+    if (style == VVSTransitionAnimationStyleFade) {
+        [UIView animateWithDuration:duration animations:^{
+            fromView.alpha = 0.f;
+        } completion:^(BOOL finished) {
+            [transitionContext completeTransition:YES];
+        }];
+        return;
+    }
+    
+    //////////////////////////////////////////////////////////////
     if (style == VVSTransitionAnimationStyleStretchFromTop) {
         fromTransform = CGAffineTransformMakeScale(1.0, 0.0001);
         
@@ -240,8 +278,10 @@
         
     }
     // scale
-    if (style == VVSTransitionAnimationStyleScaleFromTopCenter) {
+    if (style == VVSTransitionAnimationStyleScaleFromCenter) {
         // scale(0.0001,0.0001) 代表距离锚点的距离,以下同理
+        fromTransform = CGAffineTransformMakeScale(0.0001, 0.0001);
+    }else if (style == VVSTransitionAnimationStyleScaleFromTopCenter) {
         fromTransform = CGAffineTransformMakeScale(0.0001, 0.0001);
     } else if (style == VVSTransitionAnimationStyleScaleFromLeftCenter) {
         fromTransform = CGAffineTransformMakeScale(0.0001, 0.0001);
@@ -258,22 +298,45 @@
     } else if (style == VVSTransitionAnimationStyleScaleFromBottomRight) {
         fromTransform = CGAffineTransformMakeScale(0.0001, 0.0001);
     }
-
-
-
     
     [UIView animateWithDuration:duration animations:^{
         fromView.transform = fromTransform;
+        if (self.alphaAnimatable) {
+            fromView.alpha = 0.f;
+        } else {
+            fromView.alpha = 1.f;
+        }
     } completion:^(BOOL finished) {
         [transitionContext completeTransition:YES];
     }];
+    
+    
 }
+
+#pragma mark - private
+//- (void)changeViewAlpha:(UIView *)view withDismiss:(BOOL)isDismiss  {
+//    if (self.alphaAnimatable) {
+//        if (isDismiss) {
+//            // dismiss
+//            
+//        } else {
+//            // present
+//            view.alpha = 0.f;
+//        }
+//    } else {
+//        if (isDismiss) {
+//            
+//        } else {
+//            
+//        }
+//    }
+//}
 
 #pragma mark - setter
 - (void)setTransitionAnimationStyle:(VVSTransitionAnimationStyle)transitionAnimationStyle {
     _transitionAnimationStyle = transitionAnimationStyle;
     // 异常断言
-    if (transitionAnimationStyle > 16) {
+    if (transitionAnimationStyle > 17) {
         NSAssert(nil, @"您所指定的transitionAnimationStyle不存在");
     }
 }

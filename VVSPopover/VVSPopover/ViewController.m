@@ -56,8 +56,10 @@
         // _manager.coverViewResponse = NO;
         // _manager.animatable = NO;
         //_manager.transitionAnimationStyle = 17;
-        _manager.transitionAnimationStyle = VVSTransitionAnimationStyleScaleFromBottomRight;
+        _manager.transitionDuration = 0.5;
+        _manager.transitionAnimationStyle = VVSTransitionAnimationStyleScaleFromCenter;
         _manager.sourceView = self.view;
+        _manager.alphaAnimatable = YES;
     }
     return _manager;
 }

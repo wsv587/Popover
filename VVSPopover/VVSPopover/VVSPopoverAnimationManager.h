@@ -22,6 +22,7 @@ typedef NS_ENUM(NSUInteger, VVSTransitionAnimationStyle) {
     VVSTransitionAnimationStylePresentFromRight,
     VVSTransitionAnimationStylePresentFromBottom,
     // scale
+    VVSTransitionAnimationStyleScaleFromCenter, // ✅
     VVSTransitionAnimationStyleScaleFromTopCenter, // ✅
     VVSTransitionAnimationStyleScaleFromLeftCenter, // ✅
     VVSTransitionAnimationStyleScaleFromRightCenter, // ✅
@@ -33,7 +34,7 @@ typedef NS_ENUM(NSUInteger, VVSTransitionAnimationStyle) {
     VVSTransitionAnimationStyleScaleFromBottomRight, // ✅
     
     // fade
-    VVSTransitionAnimationStyleFade,
+    VVSTransitionAnimationStyleFade, 
 
 };
 
@@ -57,6 +58,12 @@ typedef NS_ENUM(NSUInteger, VVSTransitionAnimationStyle) {
  *  默认有动画
  */
 @property(nonatomic,assign,getter=isAnimatable) BOOL animatable;
+/**
+ *  透明度是否动画
+ *  默认没有
+ */
+@property(nonatomic,assign,getter=isAlphaAnimatable) BOOL alphaAnimatable;
+
 /**
  *  转场样式
  *  默认值 VVSTransitionAnimationStyleStretchFromTop
