@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D01B784A1DBBCC38001EC01E /* UIView+VVSFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B78491DBBCC38001EC01E /* UIView+VVSFrame.m */; };
+		D01E9D671DBCBD9100015E21 /* PopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = D01E9D661DBCBD9100015E21 /* PopoverController.m */; };
 		D0237C081DBA694E00A3257F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0237C071DBA694E00A3257F /* main.m */; };
 		D0237C0B1DBA694E00A3257F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0237C0A1DBA694E00A3257F /* AppDelegate.m */; };
 		D0237C0E1DBA694E00A3257F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0237C0D1DBA694E00A3257F /* ViewController.m */; };
@@ -42,6 +43,8 @@
 /* Begin PBXFileReference section */
 		D01B78481DBBCC38001EC01E /* UIView+VVSFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VVSFrame.h"; sourceTree = "<group>"; };
 		D01B78491DBBCC38001EC01E /* UIView+VVSFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VVSFrame.m"; sourceTree = "<group>"; };
+		D01E9D651DBCBD9100015E21 /* PopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverController.h; sourceTree = "<group>"; };
+		D01E9D661DBCBD9100015E21 /* PopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverController.m; sourceTree = "<group>"; };
 		D0237C031DBA694E00A3257F /* VVSPopover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VVSPopover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0237C071DBA694E00A3257F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D0237C091DBA694E00A3257F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -161,6 +164,8 @@
 				D0237C3A1DBA6B1800A3257F /* VVSPopoverViewController.h */,
 				D0237C3B1DBA6B1800A3257F /* VVSPopoverViewController.m */,
 				D0237C3C1DBA6B1800A3257F /* VVSPopoverViewController.xib */,
+				D01E9D651DBCBD9100015E21 /* PopoverController.h */,
+				D01E9D661DBCBD9100015E21 /* PopoverController.m */,
 				D0237C3F1DBA6D4700A3257F /* VVSPresentationController.h */,
 				D0237C401DBA6D4700A3257F /* VVSPresentationController.m */,
 				D0237C451DBA7C9D00A3257F /* VVSPopoverAnimationManager.h */,
@@ -310,6 +315,7 @@
 				D0237C0E1DBA694E00A3257F /* ViewController.m in Sources */,
 				D0237C0B1DBA694E00A3257F /* AppDelegate.m in Sources */,
 				D0237C3D1DBA6B1800A3257F /* VVSPopoverViewController.m in Sources */,
+				D01E9D671DBCBD9100015E21 /* PopoverController.m in Sources */,
 				D0237C471DBA7C9D00A3257F /* VVSPopoverAnimationManager.m in Sources */,
 				D0237C081DBA694E00A3257F /* main.m in Sources */,
 			);

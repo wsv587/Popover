@@ -12,20 +12,20 @@
 typedef NS_ENUM(NSUInteger, VVSTransitionAnimationStyle) {
     
     // stretch
-    VVSTransitionAnimationStyleStretchFromTop,
-    VVSTransitionAnimationStyleStretchFromLeft,
-    VVSTransitionAnimationStyleStretchFromRight,
-    VVSTransitionAnimationStyleStretchFromBottom,
+    VVSTransitionAnimationStyleStretchFromTop, // ✅
+    VVSTransitionAnimationStyleStretchFromLeft, // ✅
+    VVSTransitionAnimationStyleStretchFromRight, // ✅
+    VVSTransitionAnimationStyleStretchFromBottom, // ✅
     // present
     VVSTransitionAnimationStylePresentFromTop,
     VVSTransitionAnimationStylePresentFromLeft,
     VVSTransitionAnimationStylePresentFromRight,
     VVSTransitionAnimationStylePresentFromBottom,
     // scale
-    VVSTransitionAnimationStyleScaleFromTopCenter,
-    VVSTransitionAnimationStyleScaleFromLeftCenter,
-    VVSTransitionAnimationStyleScaleFromRightCenter,
-    VVSTransitionAnimationStyleScaleFromBottomCenter,
+    VVSTransitionAnimationStyleScaleFromTopCenter, // ✅
+    VVSTransitionAnimationStyleScaleFromLeftCenter, // ✅
+    VVSTransitionAnimationStyleScaleFromRightCenter, // ✅
+    VVSTransitionAnimationStyleScaleFromBottomCenter, // ✅
     
     VVSTransitionAnimationStyleScaleFromTopLeft,
     VVSTransitionAnimationStyleScaleFromTopRight,
@@ -62,5 +62,8 @@ typedef NS_ENUM(NSUInteger, VVSTransitionAnimationStyle) {
  *  默认值 VVSTransitionAnimationStyleStretchFromTop
  */
 @property(nonatomic,assign) VVSTransitionAnimationStyle transitionAnimationStyle;
-
+/**
+ *  发起转场的源控制器的view
+ */
+@property(nonatomic,weak) UIView *sourceView;
 @end

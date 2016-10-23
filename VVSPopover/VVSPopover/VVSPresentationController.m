@@ -20,6 +20,7 @@
         // 在这赋值会被manager覆盖掉
         // _coverViewResponse = YES;
     }
+    
     return self;
 }
 
@@ -31,8 +32,8 @@
     self.cover.frame = self.containerView.bounds;
     // 3.调整被展现视图的大小
     self.presentedView.frame = self.presentedViewFrame;
+    
 }
-
 
 #pragma mark - private
 - (void)dismiss {
