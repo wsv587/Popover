@@ -70,6 +70,11 @@ typedef NS_ENUM(NSUInteger, VVSTransitionAnimationStyle) {
  */
 @property(nonatomic,assign) VVSTransitionAnimationStyle transitionAnimationStyle;
 /**
+ *  是否有蒙版
+ *  默认有
+ */
+@property(nonatomic,assign,getter=isHasCoverView) BOOL hasConverView;
+/**
  *  发起转场的源控制器的view
  */
 @property(nonatomic,weak) UIView *sourceView;

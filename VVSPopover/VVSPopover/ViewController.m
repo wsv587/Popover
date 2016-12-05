@@ -60,6 +60,7 @@
         _manager.transitionAnimationStyle = VVSTransitionAnimationStyleScaleFromCenter;
         _manager.sourceView = self.view;
         _manager.alphaAnimatable = YES;
+        _manager.hasConverView = NO;
     }
     return _manager;
 }
