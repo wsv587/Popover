@@ -7,20 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D01B784A1DBBCC38001EC01E /* UIView+VVSFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B78491DBBCC38001EC01E /* UIView+VVSFrame.m */; };
-		D01E9D671DBCBD9100015E21 /* PopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = D01E9D661DBCBD9100015E21 /* PopoverController.m */; };
 		D0237C081DBA694E00A3257F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0237C071DBA694E00A3257F /* main.m */; };
-		D0237C0B1DBA694E00A3257F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0237C0A1DBA694E00A3257F /* AppDelegate.m */; };
 		D0237C0E1DBA694E00A3257F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0237C0D1DBA694E00A3257F /* ViewController.m */; };
 		D0237C111DBA694E00A3257F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0237C0F1DBA694E00A3257F /* Main.storyboard */; };
-		D0237C131DBA694E00A3257F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0237C121DBA694E00A3257F /* Assets.xcassets */; };
 		D0237C161DBA694E00A3257F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0237C141DBA694E00A3257F /* LaunchScreen.storyboard */; };
 		D0237C211DBA694E00A3257F /* VVSPopoverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0237C201DBA694E00A3257F /* VVSPopoverTests.m */; };
 		D0237C2C1DBA694E00A3257F /* VVSPopoverUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0237C2B1DBA694E00A3257F /* VVSPopoverUITests.m */; };
-		D0237C3D1DBA6B1800A3257F /* VVSPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0237C3B1DBA6B1800A3257F /* VVSPopoverViewController.m */; };
-		D0237C3E1DBA6B1800A3257F /* VVSPopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0237C3C1DBA6B1800A3257F /* VVSPopoverViewController.xib */; };
-		D0237C411DBA6D4700A3257F /* VVSPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0237C401DBA6D4700A3257F /* VVSPresentationController.m */; };
-		D0237C471DBA7C9D00A3257F /* VVSPopoverAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D0237C461DBA7C9D00A3257F /* VVSPopoverAnimationManager.m */; };
+		D0EC43FC1F10EEC90078D9E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EC43F91F10EEC90078D9E9 /* AppDelegate.m */; };
+		D0EC43FD1F10EEC90078D9E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0EC43FA1F10EEC90078D9E9 /* Assets.xcassets */; };
+		D0EC43FE1F10EEC90078D9E9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0EC43FB1F10EEC90078D9E9 /* Info.plist */; };
+		D0EC440B1F10F02A0078D9E9 /* PopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EC44011F10F02A0078D9E9 /* PopoverController.m */; };
+		D0EC440C1F10F02A0078D9E9 /* UIView+VVSFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EC44031F10F02A0078D9E9 /* UIView+VVSFrame.m */; };
+		D0EC440D1F10F02A0078D9E9 /* VVSPopoverAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EC44051F10F02A0078D9E9 /* VVSPopoverAnimationManager.m */; };
+		D0EC440E1F10F02A0078D9E9 /* VVSPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EC44071F10F02A0078D9E9 /* VVSPopoverViewController.m */; };
+		D0EC440F1F10F02A0078D9E9 /* VVSPopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0EC44081F10F02A0078D9E9 /* VVSPopoverViewController.xib */; };
+		D0EC44101F10F02A0078D9E9 /* VVSPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EC440A1F10F02A0078D9E9 /* VVSPresentationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,33 +42,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D01B78481DBBCC38001EC01E /* UIView+VVSFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VVSFrame.h"; sourceTree = "<group>"; };
-		D01B78491DBBCC38001EC01E /* UIView+VVSFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VVSFrame.m"; sourceTree = "<group>"; };
-		D01E9D651DBCBD9100015E21 /* PopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverController.h; sourceTree = "<group>"; };
-		D01E9D661DBCBD9100015E21 /* PopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverController.m; sourceTree = "<group>"; };
 		D0237C031DBA694E00A3257F /* VVSPopover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VVSPopover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0237C071DBA694E00A3257F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D0237C091DBA694E00A3257F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D0237C0A1DBA694E00A3257F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D0237C0C1DBA694E00A3257F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D0237C0D1DBA694E00A3257F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D0237C101DBA694E00A3257F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D0237C121DBA694E00A3257F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0237C151DBA694E00A3257F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D0237C171DBA694E00A3257F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0237C1C1DBA694E00A3257F /* VVSPopoverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VVSPopoverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0237C201DBA694E00A3257F /* VVSPopoverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVSPopoverTests.m; sourceTree = "<group>"; };
 		D0237C221DBA694E00A3257F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0237C271DBA694E00A3257F /* VVSPopoverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VVSPopoverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0237C2B1DBA694E00A3257F /* VVSPopoverUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVSPopoverUITests.m; sourceTree = "<group>"; };
 		D0237C2D1DBA694E00A3257F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D0237C3A1DBA6B1800A3257F /* VVSPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVSPopoverViewController.h; sourceTree = "<group>"; };
-		D0237C3B1DBA6B1800A3257F /* VVSPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVSPopoverViewController.m; sourceTree = "<group>"; };
-		D0237C3C1DBA6B1800A3257F /* VVSPopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VVSPopoverViewController.xib; sourceTree = "<group>"; };
-		D0237C3F1DBA6D4700A3257F /* VVSPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVSPresentationController.h; sourceTree = "<group>"; };
-		D0237C401DBA6D4700A3257F /* VVSPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVSPresentationController.m; sourceTree = "<group>"; };
-		D0237C451DBA7C9D00A3257F /* VVSPopoverAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVSPopoverAnimationManager.h; sourceTree = "<group>"; };
-		D0237C461DBA7C9D00A3257F /* VVSPopoverAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVSPopoverAnimationManager.m; sourceTree = "<group>"; };
+		D0EC43F81F10EEC90078D9E9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D0EC43F91F10EEC90078D9E9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D0EC43FA1F10EEC90078D9E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0EC43FB1F10EEC90078D9E9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0EC44001F10F02A0078D9E9 /* PopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverController.h; sourceTree = "<group>"; };
+		D0EC44011F10F02A0078D9E9 /* PopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverController.m; sourceTree = "<group>"; };
+		D0EC44021F10F02A0078D9E9 /* UIView+VVSFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VVSFrame.h"; sourceTree = "<group>"; };
+		D0EC44031F10F02A0078D9E9 /* UIView+VVSFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VVSFrame.m"; sourceTree = "<group>"; };
+		D0EC44041F10F02A0078D9E9 /* VVSPopoverAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVSPopoverAnimationManager.h; sourceTree = "<group>"; };
+		D0EC44051F10F02A0078D9E9 /* VVSPopoverAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVSPopoverAnimationManager.m; sourceTree = "<group>"; };
+		D0EC44061F10F02A0078D9E9 /* VVSPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVSPopoverViewController.h; sourceTree = "<group>"; };
+		D0EC44071F10F02A0078D9E9 /* VVSPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVSPopoverViewController.m; sourceTree = "<group>"; };
+		D0EC44081F10F02A0078D9E9 /* VVSPopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VVSPopoverViewController.xib; sourceTree = "<group>"; };
+		D0EC44091F10F02A0078D9E9 /* VVSPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVSPresentationController.h; sourceTree = "<group>"; };
+		D0EC440A1F10F02A0078D9E9 /* VVSPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVSPresentationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,15 +119,15 @@
 		D0237C051DBA694E00A3257F /* VVSPopover */ = {
 			isa = PBXGroup;
 			children = (
-				D0237C391DBA6A5C00A3257F /* Popover */,
-				D0237C091DBA694E00A3257F /* AppDelegate.h */,
-				D0237C0A1DBA694E00A3257F /* AppDelegate.m */,
+				D0EC43FF1F10F02A0078D9E9 /* Popover */,
 				D0237C0C1DBA694E00A3257F /* ViewController.h */,
 				D0237C0D1DBA694E00A3257F /* ViewController.m */,
 				D0237C0F1DBA694E00A3257F /* Main.storyboard */,
-				D0237C121DBA694E00A3257F /* Assets.xcassets */,
 				D0237C141DBA694E00A3257F /* LaunchScreen.storyboard */,
-				D0237C171DBA694E00A3257F /* Info.plist */,
+				D0EC43F81F10EEC90078D9E9 /* AppDelegate.h */,
+				D0EC43F91F10EEC90078D9E9 /* AppDelegate.m */,
+				D0EC43FA1F10EEC90078D9E9 /* Assets.xcassets */,
+				D0EC43FB1F10EEC90078D9E9 /* Info.plist */,
 				D0237C061DBA694E00A3257F /* Supporting Files */,
 			);
 			path = VVSPopover;
@@ -158,22 +159,22 @@
 			path = VVSPopoverUITests;
 			sourceTree = "<group>";
 		};
-		D0237C391DBA6A5C00A3257F /* Popover */ = {
+		D0EC43FF1F10F02A0078D9E9 /* Popover */ = {
 			isa = PBXGroup;
 			children = (
-				D0237C3A1DBA6B1800A3257F /* VVSPopoverViewController.h */,
-				D0237C3B1DBA6B1800A3257F /* VVSPopoverViewController.m */,
-				D0237C3C1DBA6B1800A3257F /* VVSPopoverViewController.xib */,
-				D01E9D651DBCBD9100015E21 /* PopoverController.h */,
-				D01E9D661DBCBD9100015E21 /* PopoverController.m */,
-				D0237C3F1DBA6D4700A3257F /* VVSPresentationController.h */,
-				D0237C401DBA6D4700A3257F /* VVSPresentationController.m */,
-				D0237C451DBA7C9D00A3257F /* VVSPopoverAnimationManager.h */,
-				D0237C461DBA7C9D00A3257F /* VVSPopoverAnimationManager.m */,
-				D01B78481DBBCC38001EC01E /* UIView+VVSFrame.h */,
-				D01B78491DBBCC38001EC01E /* UIView+VVSFrame.m */,
+				D0EC44001F10F02A0078D9E9 /* PopoverController.h */,
+				D0EC44011F10F02A0078D9E9 /* PopoverController.m */,
+				D0EC44021F10F02A0078D9E9 /* UIView+VVSFrame.h */,
+				D0EC44031F10F02A0078D9E9 /* UIView+VVSFrame.m */,
+				D0EC44041F10F02A0078D9E9 /* VVSPopoverAnimationManager.h */,
+				D0EC44051F10F02A0078D9E9 /* VVSPopoverAnimationManager.m */,
+				D0EC44061F10F02A0078D9E9 /* VVSPopoverViewController.h */,
+				D0EC44071F10F02A0078D9E9 /* VVSPopoverViewController.m */,
+				D0EC44081F10F02A0078D9E9 /* VVSPopoverViewController.xib */,
+				D0EC44091F10F02A0078D9E9 /* VVSPresentationController.h */,
+				D0EC440A1F10F02A0078D9E9 /* VVSPresentationController.m */,
 			);
-			name = Popover;
+			path = Popover;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,9 +284,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0237C161DBA694E00A3257F /* LaunchScreen.storyboard in Resources */,
-				D0237C131DBA694E00A3257F /* Assets.xcassets in Resources */,
-				D0237C3E1DBA6B1800A3257F /* VVSPopoverViewController.xib in Resources */,
+				D0EC43FE1F10EEC90078D9E9 /* Info.plist in Resources */,
+				D0EC440F1F10F02A0078D9E9 /* VVSPopoverViewController.xib in Resources */,
 				D0237C111DBA694E00A3257F /* Main.storyboard in Resources */,
+				D0EC43FD1F10EEC90078D9E9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,14 +312,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0237C411DBA6D4700A3257F /* VVSPresentationController.m in Sources */,
-				D01B784A1DBBCC38001EC01E /* UIView+VVSFrame.m in Sources */,
+				D0EC43FC1F10EEC90078D9E9 /* AppDelegate.m in Sources */,
+				D0EC440B1F10F02A0078D9E9 /* PopoverController.m in Sources */,
+				D0EC440E1F10F02A0078D9E9 /* VVSPopoverViewController.m in Sources */,
 				D0237C0E1DBA694E00A3257F /* ViewController.m in Sources */,
-				D0237C0B1DBA694E00A3257F /* AppDelegate.m in Sources */,
-				D0237C3D1DBA6B1800A3257F /* VVSPopoverViewController.m in Sources */,
-				D01E9D671DBCBD9100015E21 /* PopoverController.m in Sources */,
-				D0237C471DBA7C9D00A3257F /* VVSPopoverAnimationManager.m in Sources */,
 				D0237C081DBA694E00A3257F /* main.m in Sources */,
+				D0EC44101F10F02A0078D9E9 /* VVSPresentationController.m in Sources */,
+				D0EC440D1F10F02A0078D9E9 /* VVSPopoverAnimationManager.m in Sources */,
+				D0EC440C1F10F02A0078D9E9 /* UIView+VVSFrame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
