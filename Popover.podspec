@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Popover"
-  s.version      = "0.3.0"
+  s.version      = "0.4.0"
   s.summary      = "转场动画三方库"
 
   # This description is used to generate tags and improve search results.
