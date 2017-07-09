@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Popover"
-  s.version      = "0.1.0"
+  s.version      = "0.2.0"
   s.summary      = "转场动画三方库"
 
   # This description is used to generate tags and improve search results.
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "VVSPopover/Popover/**/*.{h,m}"
+  s.source_files  = "Popover", "VVSPopover/Popover/**/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
