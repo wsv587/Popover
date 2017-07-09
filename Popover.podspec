@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-转场动画三方库...
+简单的转场动画三方库...
                    DESC
 
   s.homepage     = "https://github.com/nlgb/Popover"
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Popover", "VVSPopover/Popover/**/*.{h,m}"
+  s.source_files  = "Classes", "VVSPopover/Classes/**/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
