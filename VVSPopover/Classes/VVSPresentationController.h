@@ -19,5 +19,9 @@
  */
 @property(nonatomic,assign,getter=isConverViewResponse) BOOL coverViewResponse;
 
-
+/**
+ *  是否有蒙版
+ *  默认有
+ */
+@property(nonatomic,assign,getter=isHasCoverView) BOOL hasConverView;
 @end

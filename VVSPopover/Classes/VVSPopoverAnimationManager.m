@@ -25,6 +25,7 @@
         _transitionDuration = 0.5;
         _coverViewResponse = YES;
         _animatable = YES;
+        _hasConverView = YES;
     }
     return self;
 }
@@ -37,6 +38,7 @@
     VVSPresentationController *presentation = [[VVSPresentationController alloc] initWithPresentedViewController:presented presentingViewController:presenting];
      presentation.presentedViewFrame = self.presentedViewFrame;
     presentation.coverViewResponse = self.isConverViewResponse;
+    presentation.hasConverView = self.hasConverView;
     NSLog(@"source == %@",source);
     sourceViewController = source;
     return presentation;

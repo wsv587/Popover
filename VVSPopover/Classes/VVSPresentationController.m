@@ -26,10 +26,13 @@
 
 - (void)containerViewWillLayoutSubviews {
     [super containerViewWillLayoutSubviews];
-    // 1.添加蒙版
-    [self.containerView insertSubview:self.cover atIndex:0];
-    // 2.设置蒙版frame
-    self.cover.frame = self.containerView.bounds;
+    if (self.hasConverView) {
+        // 1.添加蒙版
+        [self.containerView insertSubview:self.cover atIndex:0];
+        // 2.设置蒙版frame
+        self.cover.frame = self.containerView.bounds;
+    }
+
     // 3.调整被展现视图的大小
     self.presentedView.frame = self.presentedViewFrame;
     
